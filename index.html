@@ -71,6 +71,7 @@ header p { color: var(--muted); margin: 0; }
 .pkg img { width: 56px; height: 56px; border-radius: 13px; flex: none; }
 .pkg h2 { font-size: 1.05rem; margin: 0 0 .15rem; }
 .pkg p { margin: 0; color: var(--muted); font-size: .9rem; }
+.downloads { margin-top: .3rem !important; font-size: .8rem !important; opacity: .75; }
 footer { margin-top: 3rem; text-align: center; color: var(--muted); font-size: .85rem; }
 footer a { color: inherit; }
 </style>
@@ -91,6 +92,7 @@ footer a { color: inherit; }
 		<div>
 			<h2>FlexClock</h2>
 			<p>Image based lock screen clock with installable digit packs</p>
+			<p class="downloads" id="downloads" hidden></p>
 		</div>
 	</a>
 
@@ -98,5 +100,21 @@ footer a { color: inherit; }
 		<a href="https://github.com/tr3tol">github.com/tr3tol</a>
 	</footer>
 </main>
+<script>
+fetch("https://api.github.com/repos/tr3tol/FlexClock/releases")
+	.then(function (response) { return response.ok ? response.json() : Promise.reject(); })
+	.then(function (releases) {
+		var total = releases.reduce(function (sum, release) {
+			return sum + release.assets.reduce(function (n, asset) {
+				return n + asset.download_count;
+			}, 0);
+		}, 0);
+		if (!total) return;
+		var element = document.getElementById("downloads");
+		element.textContent = total.toLocaleString() + " release download" + (total === 1 ? "" : "s");
+		element.hidden = false;
+	})
+	.catch(function () { /* rate limited or offline: leave the line hidden */ });
+</script>
 </body>
 </html>
