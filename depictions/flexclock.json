@@ -1,0 +1,100 @@
+{
+  "minVersion": "0.1",
+  "class": "DepictionTabView",
+  "tintColor": "#1C1C1E",
+  "headerImage": "https://tr3tol.github.io/repo/assets/banner.png",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Replaces the lock screen clock with images, and lets you install your own digit packs.\n\nBuilt against the CoverSheetKit lock screen, for iOS 18."
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Features"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- Animated or still digits\n- Installable digit packs, imported and removed from Settings\n- Adjustable digit size, spacing and vertical offset\n- 12-hour, 24-hour or system time format\n- Optional date hiding\n- Colour tinting that keeps the artwork's shading, the way iOS tints app icons\n- Switch to still frames while Low Power Mode is on\n- Settings apply live, no respring needed\n- Falls back to the stock clock if the selected pack is unusable"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Digit packs"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "A pack is a folder named `<Name>.flexpack` containing an `animated` and/or `static` folder with `0`–`9` and `colon` as GIF or PNG. Drop one into `/var/mobile/Library/FlexClock/Packs` or import it from **Settings → FlexClock → Manage packs**."
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "tr3tol on GitHub",
+          "action": "https://github.com/tr3tol"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Source code",
+          "action": "https://github.com/tr3tol/FlexClock"
+        }
+      ]
+    },
+    {
+      "tabname": "Info",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Requirements"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "System",
+          "text": "iOS 18"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Jailbreak",
+          "text": "Rootless"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Requires",
+          "text": "preferenceloader"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Package"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "tr3tol"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "License",
+          "text": "GPL-3.0"
+        }
+      ]
+    }
+  ]
+}

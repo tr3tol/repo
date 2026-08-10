@@ -1,0 +1,2 @@
+# Never rewrite line endings: it would invalidate the Release signatures.
+* -text

@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: tr3tol
+Label: tr3tol
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm64
+Components: main
+Description: Tweaks by tr3tol
+Date: Mon, 10 Aug 2026 21:21:57 GMT
+MD5Sum:
+ 82ac49220abecc806506cd5a136d21f2 917 Packages
+ 2f2092a9b56bdbb5d06de8ab83b8a6b6 514 Packages.gz
+ b5736fd16b82bd268297d8e4910c0dc6 583 Packages.bz2
+SHA256:
+ 8d3368f5b778ddca478ed3079c2955c7fca3684f338863538297e577531ac76b 917 Packages
+ aa7fc58bbc65f352183cf160c31c28bbfa43478bb44477ee694f47ed6b7d8d23 514 Packages.gz
+ 8fdddf14e196aa97d114114eb5a625ebffd78dcb51fd683896f10e8df3e56e4c 583 Packages.bz2
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE0hJJkyh3/CbQs0SlXvLaE2moKmgFAmp6QPYACgkQXvLaE2mo
+Kmg5bA//R5ZcPalWL7yMJxr+TGdqDmx1tMNvyUTQsDBEmkW2KLJw1g78uDIW4Aua
+HRD3Ee4iKiBVzuVI61N8Q4S59YIP7IGUrZ5e87edVRlU5kDxZykb9BU2bkeq1PIj
+mlIR+elccxa4RpTj42c/iRXOPBNAJXhDXBfCIhGxgwMh1huh6+ieMe4aDe9OA5Xi
+9srPl859gz5XffDrpCxMJDE9gq6s30dbkr0csFVEoYf+g0r5u9Fxn+d6owtwW0Qb
+Q9SqljatSqvYoRVkje+QJdsQjVO28qIi/Mr/uqstTc+w+Uv+o6dhtQODuc72XobH
+w/iqct4kFdk6z0Pq+7m9nQm4FfNANqwZsy6z9jl3vAgDmWIc2etBB4CA7XO1rIZf
+UioXtXuWXZHvrjKMo8w7vIB3N0wvppJc3bNVG+ArsmVUQqT8jIlJjAjGVdehlCbs
+bXieYWX4En3RWg4n6xWPwn3avzKGtdPjWYD3u/HP9TrpAXa8u133Vg4LG1lyEoRy
+0LWEKmE4jni/dbrsQmACKXtDCOgB5WLWgsrN9GGNc6u5cOjORIRdWyiPt++nMnxa
+x3O0+gufjHHC5nJFypGwXRaAYq0A0rWq16MHJRV9PXFitH/BLKm0RZm/KZKWRedy
+hgrcRWBqe4sreUUpaLaVOkLJheATmT5M6iCUHV5OeQRvlfXNaL0=
+=GyH/
+-----END PGP SIGNATURE-----
