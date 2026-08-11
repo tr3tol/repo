@@ -21,7 +21,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "- Animated or still digits\n- Installable digit packs, imported and removed from Settings\n- Adjustable digit size, spacing and vertical offset\n- 12-hour, 24-hour or system time format\n- Optional date hiding\n- Colour tinting that keeps the artwork's shading, the way iOS tints app icons\n- Switch to still frames while Low Power Mode is on\n- Settings apply live, no respring needed\n- Falls back to the stock clock if the selected pack is unusable"
+          "markdown": "- Animated or still digits\n- Four packs included — Anime, Pixel, CRT and Sakura\n- Installable digit packs, imported and removed from Settings\n- Adjustable animation speed\n- Adjustable digit size, spacing and vertical offset\n- 12-hour, 24-hour or system time format\n- Optional date hiding\n- Colour tinting that keeps the artwork's shading, the way iOS tints app icons\n- Switch to still frames while Low Power Mode is on\n- Settings apply live, no respring needed\n- Falls back to the stock clock if the selected pack is unusable"
         },
         {
           "class": "DepictionSeparatorView"
@@ -32,7 +32,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "A pack is a folder named `<Name>.flexpack` containing an `animated` and/or `static` folder with `0`–`9` and `colon` as GIF or PNG. Drop one into `/var/mobile/Library/FlexClock/Packs` or import it from **Settings → FlexClock → Manage packs**."
+          "markdown": "A pack is a folder named `<Name>.flexpack` containing an `animated` and/or `static` folder with `0`–`9` and `colon` as GIF or PNG. Animated GIF and APNG both play at their own frame timing. Drop one into `/var/mobile/Library/FlexClock/Packs` or import it from **Settings → FlexClock → Manage packs**."
         },
         {
           "class": "DepictionSeparatorView"
@@ -87,7 +87,7 @@
         {
           "class": "DepictionTableTextView",
           "title": "Version",
-          "text": "1.0.1"
+          "text": "1.0.2"
         },
         {
           "class": "DepictionTableTextView",

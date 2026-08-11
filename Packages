@@ -18,3 +18,24 @@ Size: 151140
 MD5sum: d1aadeb3a1684027707e31c7f7aaac9f
 SHA1: 7f0d70dff7f4f0a8c8b9e7e59fb81d6c7bf855f0
 SHA256: 6bb9a0cbdf0a90af617945c2c0c6283b227ed54fb697f326a4401aefdf491522
+
+Package: com.tr3tol.flexclock
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Name: FlexClock
+Description: Image based lock screen clock with installable digit packs
+Author: tr3tol <https://github.com/tr3tol>
+Maintainer: tr3tol <https://github.com/tr3tol>
+Section: Tweaks
+Depends: firmware (>= 18.0), firmware (<< 19.0), mobilesubstrate, preferenceloader
+Tag: purpose::customize, compatible_min::ios18.0, compatible_max::ios18.9
+Homepage: https://github.com/tr3tol/FlexClock
+Depiction: https://tr3tol.github.io/repo/depictions/flexclock.html
+SileoDepiction: https://tr3tol.github.io/repo/depictions/flexclock.json
+Icon: https://tr3tol.github.io/repo/assets/icon.png
+Installed-Size: 7436
+Filename: debs/com.tr3tol.flexclock_1.0.2_iphoneos-arm64.deb
+Size: 6096216
+MD5sum: 9a1141d3062adedd934c416f848b9d9f
+SHA1: bba5fbdc543bb00a2880b593eb650ffb9a899094
+SHA256: edc3b9b60107c8f7a7db87277867ba5cb03992843610fbdfc56871b602bdce52
