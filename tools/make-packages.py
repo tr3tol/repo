@@ -18,6 +18,7 @@ import hashlib
 import io
 import lzma
 import os
+import re
 import subprocess
 import sys
 import tarfile
@@ -85,11 +86,34 @@ def parse(text):
     return fields
 
 
-def build_packages():
-    entries = []
+def version_key(version):
+    """Orders versions with digit runs compared as numbers, so 1.0.10 > 1.0.9."""
+    return [(0, int(part)) if part.isdigit() else (1, part)
+            for part in re.findall(r"\d+|\D+", version)]
+
+
+def newest_per_package():
+    """Picks one file per package name, keeping the highest version.
+
+    Listing every build leaves several stanzas sharing a Package field, and
+    Sileo reports a repository like that as empty. Older files stay in debs/
+    and remain downloadable by direct link, they are simply not indexed.
+    """
+    best = {}
     for filename in sorted(os.listdir(DEBS)):
         if not filename.endswith(".deb"):
             continue
+        fields = parse(read_control(os.path.join(DEBS, filename)))
+        name, version = fields.get("Package"), fields.get("Version", "")
+        if name not in best or version_key(version) > version_key(best[name][1]):
+            best[name] = (filename, version)
+
+    return [entry[0] for entry in sorted(best.values())]
+
+
+def build_packages():
+    entries = []
+    for filename in newest_per_package():
         path = os.path.join(DEBS, filename)
         with open(path, "rb") as handle:
             blob = handle.read()
