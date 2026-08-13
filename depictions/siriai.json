@@ -1,0 +1,116 @@
+{
+  "minVersion": "0.1",
+  "class": "DepictionTabView",
+  "tintColor": "#1C1C1E",
+  "headerImage": "https://tr3tol.github.io/repo/assets/banner.png",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Siri keeps working exactly as it does now. Alarms, timers, notes and messages are untouched. Only the questions Siri hands off to web search are sent to a language model, and the reply is shown on screen and spoken in Siri's own voice."
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Features"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- Replaces the web search fallback with a real answer\n- Optionally replaces encyclopedia summaries and Siri's scripted small talk\n- Hides the search card so only the answer remains\n- Any OpenAI-compatible endpoint — OpenRouter, Groq, Cerebras or a local server\n- Up to three models tried in order when one is rate-limited\n- Custom system prompt, or a built-in one per language\n- Topic trigger: a word list with a prompt of its own\n- Answer length and reply timeout are adjustable\n- Markup stripped so nothing is read aloud as punctuation\n- Settings apply immediately, no respring needed\n- Leaves Siri's own result in place when no answer arrives in time"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Setup"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Open **Settings → SiriAI** and enter an API key. Everything else already has a working default."
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Background cost"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "None. There is no helper daemon and no listening socket — the request is made from inside the Siri process itself, on a thread that dies with it."
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "tr3tol on GitHub",
+          "action": "https://github.com/tr3tol"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Source code",
+          "action": "https://github.com/tr3tol/SiriAI"
+        }
+      ]
+    },
+    {
+      "tabname": "Info",
+      "class": "DepictionStackView",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "Requirements"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "System",
+          "text": "iOS 18"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Jailbreak",
+          "text": "Rootless"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Requires",
+          "text": "preferenceloader"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Also needs",
+          "text": "An API key for an OpenAI-compatible endpoint"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Package"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "tr3tol"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "License",
+          "text": "GPL-3.0"
+        }
+      ]
+    }
+  ]
+}

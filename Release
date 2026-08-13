@@ -6,12 +6,12 @@ Codename: ios
 Architectures: iphoneos-arm64
 Components: main
 Description: Tweaks by tr3tol
-Date: Tue, 11 Aug 2026 22:05:42 GMT
+Date: Thu, 13 Aug 2026 00:20:40 GMT
 MD5Sum:
- f410b41aa8b45e285dbcd8baa07823b5 919 Packages
- a294c4852a8a195e2048dec1c062c92d 514 Packages.gz
- 9d129af00c981d9ee492fd7494f74218 590 Packages.bz2
+ 5eef07346e7e3680edac52b42014890e 1810 Packages
+ 0c9b67f6f92327dd814fb280d35f3fe8 708 Packages.gz
+ 6910bf2b87643ef7a901d5c23f0ac066 851 Packages.bz2
 SHA256:
- 661d709c5b2f79c8b62800de09d500703e7fd52451503a4685ccbdb3372078fd 919 Packages
- 1e3c9b282e1aefd905d472669167d24a2a5c68c080e8779bef63e5d2e8c23eff 514 Packages.gz
- 9fb2e900082d56debb3bf8b3e3d3dfca802c8d4d14f63c5060bcad488a79c34a 590 Packages.bz2
+ c33af214a055aa014333e10e7f300b603ba42c4b86cbaf7a4ae7b8c17a80c5ad 1810 Packages
+ 7ff9fd28f8c9d2d810c8ec8ccf22fb1f4fea93d91248b823f96ea7d575add25f 708 Packages.gz
+ a6f2f256ea0e7ed2997056237331e11d6ce671f60bf8ef0d442b2df33441230f 851 Packages.bz2

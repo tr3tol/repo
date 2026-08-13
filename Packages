@@ -18,3 +18,24 @@ Size: 6096216
 MD5sum: 9a1141d3062adedd934c416f848b9d9f
 SHA1: bba5fbdc543bb00a2880b593eb650ffb9a899094
 SHA256: edc3b9b60107c8f7a7db87277867ba5cb03992843610fbdfc56871b602bdce52
+
+Package: com.tr3tol.siriai
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Name: SiriAI
+Description: Answers the questions Siri hands off to web search
+Author: tr3tol <https://github.com/tr3tol>
+Maintainer: tr3tol <https://github.com/tr3tol>
+Section: Tweaks
+Depends: firmware (>= 18.0), firmware (<< 19.0), mobilesubstrate, preferenceloader
+Tag: purpose::extension, compatible_min::ios18.0, compatible_max::ios18.9
+Homepage: https://github.com/tr3tol/SiriAI
+Depiction: https://tr3tol.github.io/repo/depictions/siriai.html
+SileoDepiction: https://tr3tol.github.io/repo/depictions/siriai.json
+Icon: https://tr3tol.github.io/repo/assets/icon.png
+Installed-Size: 356
+Filename: debs/com.tr3tol.siriai_1.0.0_iphoneos-arm64.deb
+Size: 16620
+MD5sum: a953655e933b19f05180ea59b8178cf6
+SHA1: 15b17229ea91d889ee428456127366cfe6cac8f9
+SHA256: a1d88ee68e315f1789b338eb83e54132752e9e779eebeb7aa2e729adf70649ca

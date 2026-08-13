@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SiriAI</title>
+<style>
+:root {
+	--bg: #ffffff;
+	--text: #1c1c1e;
+	--muted: #6e6e73;
+	--line: #e3e3e6;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #1c1c1e;
+		--text: #f5f5f7;
+		--muted: #98989d;
+		--line: #2c2c2e;
+	}
+}
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	padding: 1.5rem 1.25rem 3rem;
+	background: var(--bg);
+	color: var(--text);
+	font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+main { max-width: 34rem; margin: 0 auto; }
+h2 {
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: .06em;
+	color: var(--muted);
+	margin: 2rem 0 .6rem;
+	font-weight: 600;
+}
+p { margin: 0 0 1rem; }
+ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+li { margin-bottom: .35rem; }
+code {
+	font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+	font-size: .875em;
+	background: var(--line);
+	padding: .1em .4em;
+	border-radius: 5px;
+}
+pre {
+	background: var(--line);
+	padding: .9rem 1rem;
+	border-radius: 10px;
+	overflow-x: auto;
+	font-size: .85rem;
+	line-height: 1.45;
+}
+pre code { background: none; padding: 0; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0 0; }
+a { color: inherit; }
+.muted { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+	<p>Siri keeps working exactly as it does now. Alarms, timers, notes and messages are
+	untouched. Only the questions Siri hands off to web search are sent to a language model,
+	and the reply is shown on screen and spoken in Siri's own voice.</p>
+	<p class="muted">For iOS 18, rootless.</p>
+
+	<h2>What gets replaced</h2>
+	<p>Siri never refuses a question &mdash; it quietly falls back to web search. That fallback
+	is the trigger, so the tweak reacts to what Siri actually did rather than to any phrase.</p>
+	<ul>
+		<li>Web search fallback &mdash; always replaced</li>
+		<li>Encyclopedia summaries &mdash; optional, on by default</li>
+		<li>Scripted small talk &mdash; optional, off by default</li>
+	</ul>
+	<p>Everything else passes through untouched. When no answer arrives in time, Siri's own
+	result is left in place.</p>
+
+	<h2>Features</h2>
+	<ul>
+		<li>Any OpenAI-compatible endpoint &mdash; OpenRouter, Groq, Cerebras or a local server</li>
+		<li>Up to three models tried in order when one is rate-limited</li>
+		<li>Custom system prompt, or a built-in one per language</li>
+		<li>Topic trigger: a word list with a prompt of its own</li>
+		<li>Adjustable answer length and reply timeout</li>
+		<li>Markup stripped so nothing is read aloud as punctuation</li>
+		<li>Optional early request, issued in parallel with Siri's own round trip</li>
+		<li>Settings apply immediately, no respring needed</li>
+	</ul>
+
+	<h2>Setup</h2>
+	<p>Open <strong>Settings &rarr; SiriAI</strong> and enter an API key. Everything else
+	already has a working default.</p>
+
+	<h2>Background cost</h2>
+	<p>None. There is no helper daemon and no listening socket: the request is made from
+	inside the Siri process itself, on a thread that dies with it.</p>
+
+	<h2>Requirements</h2>
+	<ul>
+		<li>iOS 18, rootless jailbreak</li>
+		<li><code>preferenceloader</code></li>
+		<li>An API key for an OpenAI-compatible endpoint</li>
+	</ul>
+
+	<h2>Developer</h2>
+	<p><a href="https://github.com/tr3tol">tr3tol</a> &middot;
+	<a href="https://github.com/tr3tol/SiriAI">source code</a></p>
+
+	<hr>
+</main>
+</body>
+</html>
