@@ -68,7 +68,18 @@ header p { color: var(--muted); margin: 0; }
 	text-decoration: none;
 	color: inherit;
 }
-.pkg img { width: 56px; height: 56px; border-radius: 13px; flex: none; }
+.pkg + .pkg { margin-top: .75rem; }
+.pkg img, .pkg .glyph { width: 56px; height: 56px; border-radius: 13px; flex: none; }
+.pkg .glyph {
+	background: var(--line);
+	color: var(--muted);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.4rem;
+	font-weight: 600;
+	letter-spacing: -.02em;
+}
 .pkg h2 { font-size: 1.05rem; margin: 0 0 .15rem; }
 .pkg p { margin: 0; color: var(--muted); font-size: .9rem; }
 .downloads { margin-top: .3rem !important; font-size: .8rem !important; opacity: .75; }
@@ -97,6 +108,7 @@ footer a { color: inherit; }
 	</a>
 
 	<a class="pkg" href="depictions/siriai.html">
+		<span class="glyph" aria-hidden="true">AI</span>
 		<div>
 			<h2>SiriAI</h2>
 			<p>Answers the questions Siri hands off to web search</p>
