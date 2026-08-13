@@ -32,10 +32,9 @@ Tag: purpose::extension, compatible_min::ios18.0, compatible_max::ios18.9
 Homepage: https://github.com/tr3tol/SiriAI
 Depiction: https://tr3tol.github.io/repo/depictions/siriai.html
 SileoDepiction: https://tr3tol.github.io/repo/depictions/siriai.json
-Icon: https://tr3tol.github.io/repo/assets/icon.png
 Installed-Size: 356
 Filename: debs/com.tr3tol.siriai_1.0.0_iphoneos-arm64.deb
-Size: 16620
-MD5sum: a953655e933b19f05180ea59b8178cf6
-SHA1: 15b17229ea91d889ee428456127366cfe6cac8f9
-SHA256: a1d88ee68e315f1789b338eb83e54132752e9e779eebeb7aa2e729adf70649ca
+Size: 16594
+MD5sum: acd7292004feb3c87b737cbc3f8e0c03
+SHA1: 13905c305c3bc1ec3b35f7c7997d6fb7528b7a88
+SHA256: b33a3cc956fa521ed6710632ca49747337c7626150013ee21a6fecde5045ffa1

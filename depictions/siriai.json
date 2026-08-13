@@ -2,7 +2,6 @@
   "minVersion": "0.1",
   "class": "DepictionTabView",
   "tintColor": "#1C1C1E",
-  "headerImage": "https://tr3tol.github.io/repo/assets/banner.png",
   "tabs": [
     {
       "tabname": "Details",
